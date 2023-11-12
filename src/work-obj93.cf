@@ -2,15 +2,18 @@ v 4
 file . "master.vhdl" "892032ed53eae0eb8076e07af91fba2ceec15267" "20231111185956.427":
   entity master at 7( 280) + 0 on 81;
   architecture behavior of master at 16( 399) + 0 on 82;
-file . "and_gate.vhdl" "f111243f7727890042317c168ecffec6c0f3552e" "20231111185955.112":
-  entity and_gate at 12( 481) + 0 on 72;
-  architecture and_truth_table of and_gate at 36( 1235) + 0 on 73;
-  configuration and_config at 51( 1807) + 0 on 74;
-file . "or_gate.vhdl" "c0f08f5e93264f8342a16e5851b2541cdfa1be49" "20231111185955.520":
-  entity or_gate at 12( 480) + 0 on 75;
-  architecture or_truth_table of or_gate at 33( 1051) + 0 on 76;
-  configuration or_config at 45( 1441) + 0 on 77;
+file . "and_gate.vhdl" "f111243f7727890042317c168ecffec6c0f3552e" "20231112110947.740":
+  entity and_gate at 12( 481) + 0 on 89;
+  architecture and_truth_table of and_gate at 36( 1235) + 0 on 90;
+  configuration and_config at 51( 1807) + 0 on 91;
+file . "or_gate.vhdl" "c0f08f5e93264f8342a16e5851b2541cdfa1be49" "20231112110948.274":
+  entity or_gate at 12( 480) + 0 on 92;
+  architecture or_truth_table of or_gate at 33( 1051) + 0 on 93;
+  configuration or_config at 45( 1441) + 0 on 94;
 file . "or_gate_7432.vhdl" "c622770130b3f4adefc9363108472819d992c50d" "20231111185955.987":
   entity or_gate_7432 at 12( 494) + 0 on 78;
   architecture or_7432_truth_table of or_gate_7432 at 69( 2759) + 0 on 79;
   configuration or_7432_config at 96( 3910) + 0 on 80;
+file . "eingang2_ausgang1_record.vhdl" "14b368262a7ef3c30a599d95adcc950b4862ab26" "20231112134024.039":
+  package eingang2_ausgang1_record at 2( 2) + 0 on 102;
+  package body eingang2_ausgang1_record at 14( 271) + 0 on 103;

@@ -16,7 +16,8 @@ modules_array=(
 # ----------------------------------------------------------------------------
 function run_check () {
     if [[ $1 -gt 0 ]]; then
-        echo "$2"
+        echo "$2 Skript:"
+        echo "$1"
         exit 1
     fi
 }
@@ -24,9 +25,9 @@ function run_check () {
 # Module syntax check ...
 # ----------------------------------------------------------------------------
 function module_check () {
-    cmd=$(ghdl -s $1.vhdl 2>&1); run_check $? "Syntax-Fehler im $1.vhdl Skript."
-    cmd=$(ghdl -a $1.vhdl 2>&1); run_check $? "Analyse-Fehler im $1.vhdl Skript."
-    cmd=$(ghdl -e $1      2>&1); run_check $? "Eloborat-Fehler im $1 Skript."
+    cmd=$(ghdl -s $1.vhdl 2>&1); run_check $? "Syntax-Fehler: $1.vhdl"
+    cmd=$(ghdl -a $1.vhdl 2>&1); run_check $? "Analyse-Fehler: $1.vhdl"
+    cmd=$(ghdl -e $1      2>&1); run_check $? "Eloborat-Fehler: $1"
 }
 
 # ----------------------------------------------------------------------------
